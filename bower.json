@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio",
+  "dependencies": {
+    "jquery": "1.11"
+  }
+}

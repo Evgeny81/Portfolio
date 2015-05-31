@@ -1,0 +1,533 @@
+/*Общие данные*/
+
+* {
+    font-family: 'fira_sansbook';
+}
+
+html, body, .wrapper {
+
+    height: 100%;
+}
+
+body>.wrapper {
+    height: auto;
+    min-height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/*Спрайт*/
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+/*Хэдер*/
+.header {
+    width: 100%;
+    height: 118px;
+    background: #EFF3F7;
+    background-image: url(../images/line_footer.png);
+    background-repeat: no-repeat;
+    background-position: 0px 115px;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top:32%;
+    left: 7.45%;
+}
+
+.sprite-logo {
+    width: 242px;
+    height: 42px;
+    background-position: -5px -233px;
+}
+
+/*Хэдер - социальные иконки*/
+
+.soc {
+    float: right;
+    position: relative;
+    top:15%;
+    right: 3.3%
+}
+
+.soc1 {
+    display: inline-block;
+    margin-right: 19px;
+}
+
+.soc1:last-child {
+    margin-right: 0;
+}
+
+.vk {
+    width: 47px;
+    height: 47px;
+    background-position: -257px -220px;
+}
+
+.vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -176px;
+}
+
+.tw {
+    width: 47px;
+    height: 47px;
+    background-position: -264px -121px;
+}
+.tw:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -176px;
+}
+
+.fb {
+    width: 47px;
+    height: 47px;
+    background-position: -196px -5px;
+}
+
+.fb:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -196px -119px;
+}
+
+.git {
+    width: 47px;
+    height: 47px;
+    background-position: -196px -62px;
+
+}
+
+.git:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -176px;
+}
+
+
+/*Основная часть*/
+.main {
+    background: url(../images/comppattern2.png);
+}
+
+.class1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 16.4%;
+}
+
+.presentation {
+    float: right;
+    width: 60.5%;
+    margin-top: 40px;
+}
+
+/*Меню навигации и контактов*/
+
+/*Меню навигации*/
+.navigation {
+    width: 250px;
+    height: 219px;
+    background: #EFF3F7;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.menu_all {
+    margin: auto;
+    padding: 0;
+
+}
+.menu {
+    height: 73px;
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+}
+
+.menu:first-child {
+    background: rgb(59,168,192);
+    border-radius: 3px 3px 0  0;
+}
+
+.menu:nth-child(2) {
+    margin: 0 10px;
+    font-size: 21px;
+    height: 71px;
+    border-bottom: 2px solid rgb(59,168,192);
+}
+
+.menu:last-child {
+    border-bottom: none;
+    font-size: 21px;
+}
+
+.first {
+    color: white;
+    vertical-align: middle;
+}
+
+.menu_text {
+    margin: 0;
+    padding-left: 27px;
+    padding-top: 21px;
+}
+.menu_tex {
+    margin: 0;
+    padding-left: 17px;
+    padding-top: 21px;
+}
+.menu_te {
+    margin: 0;
+    padding-left: 26px;
+    padding-top: 20px;
+}
+
+
+.second, .third {
+    color: rgb(149,154,168);
+}
+
+.second:hover, .third:hover {
+    color: rgb(59,168,192);
+}
+
+.menu1 {
+    text-decoration: none;
+}
+
+/*Меню контактов*/
+
+.contacts {
+    padding: 0;
+    font-size: 18px;
+    margin-top: 24px;
+}
+.contacts_all {
+    width: 250px;
+    height: 160px;
+    background: #EFF3F7;
+    border-radius: 3px;
+}
+
+.contact:first-child {
+    background-color: rgb(59,168,192);
+    border-radius: 3px 3px 0 0;
+}
+
+.contact:nth-child(2) {
+    background-color: rgb(65,185,212);
+}
+
+.contact:nth-child(3) {
+    background-color: rgb(72,203,232);
+}
+
+.contact:last-child {
+    background-color: rgb(81,218,248);
+    border-radius: 0 0 3px 3px;
+}
+
+.contact{
+    height: 40px;
+    text-align: left;
+}
+
+.cont-text {
+    font-size: 21px;
+    padding-left: 19px;
+    padding-top: 6px;
+}
+
+.contact .email-text{
+    padding-left: 83px;
+    padding-top: 4px;
+}
+
+.contact .phone-text{
+    font-size: 16px;
+    padding-left: 83px;
+    padding-top: 8px;
+}
+
+.contact .skype-text{
+    font-size: 16px;
+    padding-left: 83px;
+    padding-top: 6px;
+}
+
+.cont{
+
+    padding-left: 30px;
+    margin: 0;
+}
+
+.email{
+    background: url(../images/envelope.png) no-repeat;
+}
+
+.phone{
+    background: url(../images/phone.png) no-repeat;
+}
+
+.skype{
+    background: url(../images/skype.png) no-repeat;
+}
+
+.email, .phone, .skype, .cont-text{
+    background-position: 42px 9px;
+    color: #FFF;
+}
+
+.email:hover, .phone:hover, .skype:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Основная информация - Ключевые навыки*/
+
+.main_information {
+    width: 650px;
+    height: 100%;
+    background: #EFF3F7;
+    border-radius: 3px;
+}
+
+.main_header, .exp_header, .edu_header {
+    border-bottom: 2px solid rgb(59,168,192);
+    font-size: 27px;
+    color: rgb(59,168,192);
+    width: 100%;
+}
+
+.main_header {
+    width: 49%;
+    margin-top: 0;
+    padding: 14px 0 11px 20px;
+}
+
+.avatar-box{
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    border: 5px solid #3ba8c0;
+    float: left;
+    margin: 16px 23px 0px 53px;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.abz {
+    font-family: 'fira_sansmedium';
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.ab {
+    font-size: 15px;
+    padding-left: 13px;
+}
+
+.skills {
+    display: inline-block;
+    width: 220px;
+    position: relative;
+    left: 28.5%;
+    bottom: 27px;
+}
+.skill{
+    color: white;
+    display: inline-block;
+    background:  -moz-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    background: -ms-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    background: -o-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    background: -webkit-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    margin-right: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.css{
+    width: 46px;
+    height: 19px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.htm {
+    width: 52px;
+    height: 19px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.jscript{
+    width: 78px;
+    height: 19px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.gulp {
+    width: 51px;
+    height: 19px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.s_git {
+    width: 41px;
+    height: 19px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*Опыт работы*/
+
+.light {
+    font-family: 'fira_sanslight';
+    font-size: 15px;
+    margin: 0 0 0 0;
+}
+
+.medium {
+    font-size: 17px;
+    margin: 0 0 0 0;
+}
+
+.info {
+    padding-left: 72px;
+    margin: 0 0 0 0;
+}
+
+.try {
+    margin-bottom: 7px;
+}
+
+.exp_header {
+    width: 29%;
+    margin-top: 29px;
+    padding: 14px 0 11px 20px;
+}
+
+.about-exp {
+    margin-left: 17px;
+    height: 100%;
+}
+
+.experience {
+    width: 650px;
+    height: 100%;
+    background: #EFF3F7;
+    border-radius: 3px;
+}
+
+.case {
+    background: url(../images/case.png)  0% center  no-repeat;
+}
+
+
+
+/*Образование*/
+
+.education {
+    width: 650px;
+    height: 100%;
+    background: #EFF3F7;
+    border-radius: 3px;
+    margin-bottom: 38px;
+}
+
+.edu_header {
+    width: 30%;
+    margin-top: 29px;
+    padding: 14px 0 11px 20px;
+}
+
+.about-edu {
+    margin-left: 14px;
+    height: 100%;
+    margin-bottom: 31px;
+}
+
+.hat {
+    background: url(../images/hat.png)  0% center  no-repeat;
+}
+
+.sheet {
+    background: url(../images/sheet.png)  1% center  no-repeat;
+}
+
+/*Футер*/
+.lock {
+    width: 20px;
+    height: 32px;
+    background-position: -253px -5px;
+    margin: 0;
+    position: absolute;
+    top: 32%;
+    left: 19%;
+}
+
+.lock:hover {
+    width: 20px;
+    height: 32px;
+    background-position: -264px -178px;
+}
+
+.copyright {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    font-size: 13px;
+}
+
+.site_footer {
+    background: #EFF3F7;
+    position: relative;
+    margin-top: -76px;
+    height: 76px;
+    clear: both;
+    background-image: url(../images/line_footer.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 100%;
+}
+
+/*Sticky footer*/
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.main {padding-bottom: 76px;}
+
+
+
