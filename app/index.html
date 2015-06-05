@@ -20,86 +20,132 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="/fonts/fira.css">
 	<link rel="stylesheet" href="/css/normalize.css/normalize.css">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/about.css">
 	<!-- JS -->
 	<script src="/js/modernizr.js"></script>
 </head>
 <body>
-	<!-- [if lt IE 8]>
+	<!-- [if lt IE 7]>
 		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
 	<! [endif] -->
 	<div class="wrapper">
 		<header class="header">
+			<div class="container">
 			<!-- Логотип школы -->
 
-				<a href="http://loftschool.com/" class="logo"><i class="sprite sprite-logo "></i></a>
+				<a href="http://loftschool.com/" class="logo">
+					<i class="sprite sprite-logo "></i>
+					<span class="header-logo-text">Логотип школы</span>
+				</a>
 
 			<!-- Иконки социальных сервисов -->
 
 				<ul class="soc">
-					<li class="soc1"><a href="http://vk.com/id5428205"><div class="sprite vk"></div></a></li>
-					<li class="soc1"><a href="https://twitter.com/"><div class="sprite tw"></div></a></li>
-					<li class="soc1"><a href="https://www.facebook.com/profile.php?id=100001995507883"><div class="sprite fb"></div></a></li>
-					<li class="soc1"><a href="https://github.com/Evgeny81"><div class="sprite git"></div></a></li>
+					<li class="soc1">
+						<a href="http://vk.com/id5428205" class="sprite vk">
+							Вконтакте
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://twitter.com/" class="sprite tw">
+							Twitter
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://www.facebook.com/profile.php?id=100001995507883" class="sprite fb">
+							Facebook
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://github.com/Evgeny81" class="sprite git">
+							Git
+						</a>
+					</li>
 				</ul>
-
+			</div>
 		</header>
 		<div class="main clearfix">
 		<!-- Меню слева, навигация -->
-		<aside class="class1">
-			<nav class="navigation">
-				<ul class="menu_all">
-					<li class="menu"><a href="" class="menu1 first"><p class="menu_text">Обо мне</p></a></li>
-					<li class="menu"><a href="" class="menu1 second"><p class="menu_tex">Мои работы</p></a></li>
-					<li class="menu"><a href="" class="menu1 third"><p class="menu_te">Связаться со мной</p></a></li>
-				</ul>
-			</nav>
-			<div class="contacts_all">
-			<!-- Контакты -->
-				<ul class="contacts">
-					<li class="contact"><p class="cont-text">Контакты</p></li>
-					<li class="contact email"><p class="cont email-text">jackk@yandex.ru</p></li>
-					<li class="contact phone"><p class="cont phone-text">+79103607646</p></li>
-					<li class="contact skype"><p class="cont skype-text">antson198112</p></li>
-				</ul>
-			</div>
-		</aside>
+			<aside class="left-menu">
+				<nav class="navigation">
+					<ul class="menu_all">
+						<li class="menu current">
+							<a href="#" class="menu-point">Обо мне</a>
+						</li>
+						<li class="menu"> <!-- класс without-current, если current в меню "Связаться со мной"-->
+							<a href="" class="menu-point">Мои работы</a>
+						</li>
+						<li class="menu"> <!-- класс without-current, если current в меню "Обо мне" и убрать, если в меню "Мои работы"-->
+							<a href="" class="menu-point">Связаться со мной</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts_container">
+				<!-- Контакты -->
+					<ul class="contacts">
+						<li class="contact">
+							<span class="cont-text">Контакты</span>
+						</li>
+						<li class="contact email">
+							<a href="mailto:jackk@yandex.ru" class="cont email-text">jackk@yandex.ru</a>
+						</li>
+						<li class="contact phone">
+							<a href="tel:+79103607646" class="cont phone-text">+79103607646</a>
+						</li>
+						<li class="contact skype">
+							<a href="skype:antson198112" class="cont skype-text">antson198112</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
 		<!-- Основная часть -->
 		<div class="presentation">
 		<!-- Основная информация, о себе -->
 			<section class="main_information">
 				<h1 class="main_header">Основная информация</h1>
-				<div class="avatar-box">
-					<img src="images/avatar.png" alt="my_photo" class="avatar">
-				</div>
-				<ul class="about">
-					<li class="abz">Меня зовут:
-						<span class="ab">Кузнецов Евгений Анатольевич</span>
-					</li>
-					<li class="abz">Мой возраст:
-						<span class="ab">33 года</span>
-					</li>
-					<li class="abz">Мой город:
-						<span class="ab">Белгород, Россия</span>
-					</li>
-					<li class="abz">Моя специализация:
-						<span class="ab">FRONTEND разработчик</span>
-					</li>
-					<li class="abz">Ключевые навыки:
-
-					</li>
-					<div class="skills">
-						<span class="skill htm">html</span>
-						<span class="skill css">css</span>
-						<span class="skill jscript">javascript</span>
-						<span class="skill gulp">gulp</span>
-						<span class="skill s_git">git</span>
+				<div class="information_container">
+					<div class="avatar-position">
+						<div class="avatar-box">
+							<img src="images/avatar.png" alt="my_photo" class="avatar">
 						</div>
-				</ul>
+					</div>
+					<div class="about-position">
+						<ul class="about">
+							<li class="about-list">
+								<div class="about-title">Меня зовут:</div>
+								<div class="about-description">Кузнецов Евгений Анатольевич</div>
+							</li>
+							<li class="about-list">
+								<div class="about-title">Мой возраст:</div>
+								<div class="about-description">33 года</div>
+							</li>
+							<li class="about-list">
+								<div class="about-title">Мой город:</div>
+								<div class="about-description">Белгород, Россия</div>
+							</li>
+							<li class="about-list">
+								<div class="about-title">Моя специализация:</div>
+								<div class="about-description">FRONTEND разработчик</div>
+							</li>
+							<li class="about-list">
+								<div class="about-title">Ключевые навыки:</div>
+								<div class="about-description">
+								<span class="skill htm">html</span>
+								<span class="skill css">css</span>
+								<span class="skill jscript">javascript</span>
+								<span class="skill gulp">gulp</span>
+								<span class="skill s_git">git</span>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
 			</section>
 			<!-- Опыт работы -->
 			<section class="experience">
-				<h1 class="exp_header">Опыт работы</h1>
+				<h2 class="exp_header">Опыт работы</h2>
 				<ul class="about-exp">
 					<li class="try case">
 						<p class="info medium">ОАО "ЭФКО" - менеджер проектов</p>
@@ -118,7 +164,7 @@
 			</section>
 			<!-- Образование -->
 			<section class="education">
-				<h1 class="edu_header">Образование</h1>
+				<h2 class="edu_header">Образование</h2>
 				<ul class="about-edu">
 					<li class="try hat">
 					<p class="info medium">Высшее. БелГТУ им. В.Г. Шухова</p>
@@ -142,6 +188,7 @@
 	<!-- Футер -->
 		<footer class="site_footer">
 			<a href=""><div class="sprite lock"></div></a>
+
 			<p class="copyright light">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 		</footer>
 
