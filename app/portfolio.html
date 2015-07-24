@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Портфолио</title>
+	<!-- SEO -->
+	<meta name="description" content="portfolio верстка frontend">
+	<meta name="keywords" content="portfolio">
+	<meta name="author" content="Кузнецов Евгений">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!-- CSS -->
+
+	<link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="/bower/qtip2/jquery.qtip.min.css">
+	<link rel="stylesheet" href="/fonts/fira.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/portfolio.css">
+
+	<!-- JS -->
+	<!--[if lt IE 10]>
+	<script src="/js/modernizr.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- [if lt IE 7]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
+	<! [endif] -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<!-- Логотип школы -->
+
+				<a href="http://loftschool.com/" class="logo">
+					<img src="images/logo.png" alt="logo" class="sprite-logo ">
+					<span class="header-logo-text">Логотип школы</span>
+				</a>
+
+			<!-- Иконки социальных сервисов -->
+
+				<ul class="soc">
+					<li class="soc1">
+						<a href="http://vk.com/id5428205" class="sprite vk">
+							Вконтакте
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://twitter.com/" class="sprite tw">
+							Twitter
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://www.facebook.com/profile.php?id=100001995507883" class="sprite fb">
+							Facebook
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://github.com/Evgeny81" class="sprite git">
+							Git
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main clearfix">
+		<!-- Меню слева, навигация -->
+			<aside class="left-menu">
+				<nav class="navigation">
+					<ul class="menu_all">
+						<li class="menu ">
+							<a href="/index.html" class="menu-point">Обо мне</a>
+						</li>
+						<li class="menu current"> <!-- класс without-current, если current в меню "Связаться со мной"-->
+							<a href="#" class="menu-point">Мои работы</a>
+						</li>
+						<li class="menu"> <!-- класс without-current, если current в меню "Обо мне" и убрать, если в меню "Мои работы"-->
+							<a href="/connect.html" class="menu-point">Связаться со мной</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts_container">
+				<!-- Контакты -->
+					<ul class="contacts">
+						<li class="contact">
+							<span class="cont-text">Контакты</span>
+						</li>
+						<li class="contact email">
+							<a href="mailto:jackk@yandex.ru" class="cont email-text">jackk@yandex.ru</a>
+						</li>
+						<li class="contact phone">
+							<a href="tel:+79103607646" class="cont phone-text">+79103607646</a>
+						</li>
+						<li class="contact skype">
+							<a href="skype:antson198112" class="cont skype-text">antson198112</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		<!-- Основная часть -->
+		<div class="presentation">
+		<!-- Основная информация, о себе -->
+			<section class="box main_information">
+				<h2 class="box_header main_header">Мои работы</h2>
+				<div class="information_container">
+				<ul class="container__list">
+					<li class="container__item">
+						<a href="#" class="project-link">
+							<img src="/images/add-site1.png" alt="" class="site-logo">
+							<div class="site-logo--hover">
+								<span class="site-logo--hover-sign">название</span>
+							</div>
+
+							<span class="container__item-url">www.site.ru</span>
+						</a>
+						<span class="container__item-description">Информация о проекте 1 превью 2 строки</span>
+					</li>
+					<li class="container__item">
+						<a href="#" class="project-link">
+							<img src="/images/add-site2.png" alt="" class="site-logo">
+							<div class="site-logo--hover">
+								<span class="site-logo--hover-sign">название</span>
+							</div>
+							<span class="container__item-url">www.site.ru</span>
+						</a>
+						<span class="container__item-description">Информация о проекте 2 превью 2 строки</span>
+					</li>
+					<li class="container__item">
+						<a href="#" class="project-link">
+							<img src="/images/add-site3.png" alt="" class="site-logo">
+							<div class="site-logo--hover">
+								<span class="site-logo--hover-sign">название</span>
+							</div>
+							<span class="container__item-url">www.site.ru</span>
+						</a>
+						<span class="container__item-description">Информация о проекте 3 превью 2 строки</span>
+					</li>
+					<li class="container__item">
+						<a href="#" class="project-link">
+							<img src="/images/add-site4.png" alt="" class="site-logo">
+							<div class="site-logo--hover">
+								<span class="site-logo--hover-sign">название</span>
+							</div>
+							<span class="container__item-url">www.site.ru</span>
+						</a>
+						<span class="container__item-description">Информация о проекте 4 превью 2 строки</span>
+					</li>
+					<li class="container__item add__project" id="add">
+						<a href="#" class="project-link">
+
+							<img src="/images/add-project.png" alt="" class="add__project-logo">
+						</a>
+							<span class="add__project-sign">Добавить проект</span>
+
+
+
+					</li>
+				</ul>
+				</div>
+
+			</section>
+		</div>
+<!-- Pop-up -->
+		<section class="pop-up" id="pop-up">
+			<div class="pop-up__header">
+				<div class="popup__header-sign--wrap">
+					<h3 class="popup__header-sign">Добавление проекта</h3>
+				</div>
+				<div class="popup__header-close--wrap">
+					<button class="popup__header-close b-close" type=""></button>
+				</div>
+			</div>
+			<div class="pop-up__form-wrapper">
+			<form action="" class="pop-up__form" id="pop-up__form">
+				<label class="popup-form__label" >
+					<div class="popup-form__label-sign">Название проекта</div>
+					<input type="text" required class="popup-form__input" name="name" id="popup__project-name" placeholder="Введите название">
+				</label>
+
+
+				<label class="popup-form__label">
+					<div class="popup-form__label-sign">Картинка проекта</div>
+
+					<div class="popup-form__label-mask">
+						<input type="text" required class="popup-form__input fileInputText" id="popup__project-image"
+						name="image"
+						placeholder="Загрузите изображение">
+						<div class="popup-form__input-image"></div>
+					</div>
+					<input type="file" class="popup-form__input-goaway" placeholder="">
+				</label>
+
+				<label class="popup-form__label">
+					<div class="popup-form__label-sign">URL проекта</div>
+					<input type="url" class="popup-form__input " name="url" id="popup__project-url" required
+					placeholder="Добавьте ссылку">
+				</label>
+
+				<label class="popup-form__label">
+					<div class="popup-form__label-sign">Описание</div>
+					<textarea name="textarea" id="popup__project-description" cols="10" rows="10" required class="popup-form__textarea" placeholder="Пара слов о вашем проекте"></textarea>
+				</label>
+				<div class="popup-form__button--wrap">
+					<button class="popup-form__button" type="submit">Добавить</button>
+				</div>
+			</form>
+			</div>
+		</section>
+	</div>
+	</div>
+
+
+	<!-- Футер -->
+		<footer class="site_footer">
+			<a href="/login.html"><div class="sprite lock"></div></a>
+
+			<p class="copyright light">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+		</footer>
+
+		<script src="/bower/jquery/dist/jquery.min.js"></script>
+		<script src="/bower/jquery-easing-original/jquery.easing.min.js"></script>
+		<script src="/bower/bpopup/jquery.bpopup.min.js"></script>
+		<script src="/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="/bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="/bower/jquery-validation/dist/jquery.validate.js"></script>
+		<script src="/js/portfolio.js"></script>
+
+
+</body>
+</html>

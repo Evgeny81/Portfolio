@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Портфолио</title>
+	<!-- SEO -->
+	<meta name="description" content="portfolio верстка frontend">
+	<meta name="keywords" content="portfolio">
+	<meta name="author" content="Кузнецов Евгений">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<!-- CSS -->
+
+	<link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="/bower/qtip2/jquery.qtip.min.css">
+	<link rel="stylesheet" href="/fonts/fira.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/connect.css">
+	<!-- JS -->
+
+		<!--[if lt IE 10]>
+	<script src="/js/modernizr.js"></script>
+	<![endif]-->
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<!-- [if lt IE 7]>
+		<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
+	<! [endif] -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+			<!-- Логотип школы -->
+
+				<a href="http://loftschool.com/" class="logo">
+					<img src="images/logo.png" alt="logo" class="sprite-logo ">
+					<span class="header-logo-text">Логотип школы</span>
+				</a>
+
+			<!-- Иконки социальных сервисов -->
+
+				<ul class="soc">
+					<li class="soc1">
+						<a href="http://vk.com/id5428205" class="sprite vk">
+							Вконтакте
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://twitter.com/" class="sprite tw">
+							Twitter
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://www.facebook.com/profile.php?id=100001995507883" class="sprite fb">
+							Facebook
+						</a>
+					</li>
+					<li class="soc1">
+						<a href="https://github.com/Evgeny81" class="sprite git">
+							Git
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="main clearfix">
+		<!-- Меню слева, навигация -->
+			<aside class="left-menu">
+				<nav class="navigation">
+					<ul class="menu_all">
+						<li class="menu ">
+							<a href="/index.html" class="menu-point">Обо мне</a>
+						</li>
+						<li class="menu">
+							<a href="/portfolio.html" class="menu-point">Мои работы</a>
+						</li>
+						<li class="menu current"> <!-- класс without-current, если current в меню "Обо мне" и убрать, если в меню "Мои работы"-->
+							<a href="#" class="menu-point menu-point-connect">Связаться со мной</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="contacts_container">
+				<!-- Контакты -->
+					<ul class="contacts">
+						<li class="contact">
+							<span class="cont-text">Контакты</span>
+						</li>
+						<li class="contact email">
+							<a href="mailto:jackk@yandex.ru" class="cont email-text">jackk@yandex.ru</a>
+						</li>
+						<li class="contact phone">
+							<a href="tel:+79103607646" class="cont phone-text">+79103607646</a>
+						</li>
+						<li class="contact skype">
+							<a href="skype:antson198112" class="cont skype-text">antson198112</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		<!-- Основная часть -->
+		<div class="presentation">
+		<!-- Основная информация, о себе -->
+			<div class="connect-box">
+			<div class="connect-header">
+				<div class="connect-sign-pos">
+					<h2 class="connect-sign">У вас интересный проект? Напишите мне</h2>
+				</div>
+			</div>
+			<div class="connect-box-form">
+				<form action="url" method="get" id="connectForm" class="connect-form">
+					<div class="connect-name">
+
+						<div class="connect-area">
+							<label for="con-name" class="connect-label">Имя</label>
+							<input type="text" name="name" id="con-name" autocomplete="off" class="connect-field" required placeholder="Как к Вам обращаться">
+						</div>
+						<div class="connect-area ">
+							<label for="con-email" class="connect-label">Email</label>
+							<input name="email" type="email" autocomplete="off" id="con-email" class="connect-field" required placeholder="Куда мне писать">
+						</div>
+					</div>
+
+					<div class="textarea-box">
+						<label for="message" class="connect-label">Сообщение</label>
+						<textarea class="connect-textarea" autocomplete="off" required name="message" id="message" placeholder="Кратко в чем суть"></textarea>
+					</div>
+					<div class="g-recaptcha" data-sitekey="6LdIJggTAAAAAHUIRbtEJ_e-ZTXIu3byTlHzZDLR"></div>
+					<div class="connect-form__button--wrap">
+						<button type="submit" class="connect-form__button"> Отправить</button>
+						<button type="reset" class="connect-form__button-reset"> Очистить</button>
+					</div>
+
+
+				</form>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Футер -->
+		<footer class="site_footer">
+			<a href="/login.html"><div class="sprite lock"></div></a>
+
+			<p class="copyright light">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+		</footer>
+
+<script src="/bower/jquery/dist/jquery.min.js"></script>
+<script src="/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="/bower/qtip2/jquery.qtip.min.js"></script>
+<script src="/bower/jquery-validation/dist/jquery.validate.js"></script>
+<script src="/js/connect.js"></script>
+</body>
+</html>

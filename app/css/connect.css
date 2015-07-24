@@ -1,0 +1,154 @@
+/*Коробка*/
+.connect-box {
+	width: 650px;
+	min-height: 840px;
+	height: 100%;
+	margin: 0 0 40px;
+	background: #EFF3F7;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+
+/*Заголовок коробки*/
+.connect-header {
+	height: 120px;
+	background: #48CBE8;
+	border-bottom: 16px solid #67DFFA;
+	margin-bottom: 44px;
+}
+
+.connect-sign-pos {
+	padding: 42px 0 0 0;
+	text-align: center ;
+}
+
+.connect-sign {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 27px;
+	font-weight: normal;
+}
+
+/*Ввод сообщения*/
+.connect-box-form {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.connect-form {
+
+}
+
+.connect-name {
+	margin-bottom: 10px;
+}
+
+.connect-area:first-child {
+	float: left;
+	margin-right: 15px;
+}
+
+.connect-label {
+	font-size: 18px;
+	color: #58697A;
+
+	font-family: 'fira_sansbook';
+	margin: 0 auto;
+	display: block;
+	text-align: left;
+}
+
+.connect-field {
+	width: 190px;
+	height: 40px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	padding: 0;
+	margin: 0 auto;
+	border: 1px solid #48CBE8;
+}
+
+.textarea-box {
+
+	margin: 0 auto 10px;
+}
+
+.connect-textarea {
+	width: 396px;
+	height: 177px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	border: 1px solid #48CBE8;
+}
+
+.connect-field::-webkit-input-placeholder,
+.connect-textarea::-webkit-input-placeholder {
+    color: #67DFFA;
+    font-size: 12px;
+    padding-left: 8px;
+    letter-spacing: .3px;
+    padding-top: 3px;
+}
+
+.connect-textarea, .connect-field {
+	color:#67DFFA;
+	font-size: 12px;
+    /*padding-left: 8px;
+    letter-spacing: .3px;
+    padding-top: 3px;*/
+}
+
+.connect-textarea::-webkit-input-placeholder {
+    padding-top: 8px;
+}
+
+.connect-form__button,
+.connect-form__button-reset {
+	letter-spacing: -0.4px;
+	width: 135px;
+	height: 33px;
+	margin: 0 auto;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	color: white;
+	border: none;
+	background-color: #67DFFA;
+	font-size: 20px;
+	border-bottom: 2px solid #3BA8C0;
+	outline: none;
+}
+
+.connect-form__button-reset {
+	outline: none;
+	float: right;
+	width: 125px;
+	background-color: #849DB5;
+	border-bottom: 2px solid #687B8F;
+}
+
+.g-recaptcha {
+	margin-bottom: 23px;
+	border: 1px solid #48CBE8;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	width: 302px;
+    height: 76px;
+}
+
+.connect-form__button:hover,
+.connect-form__button-reset:hover {
+	border-bottom: none;
+	outline: none;
+}
+
+.connect-form__button-reset:active {
+	outline: none;
+    border-top: 2px solid #687B8F;
+}
+
+.connect-form__button:active {
+	outline: none;
+	border-top: 2px solid #3BA8C0;
+}

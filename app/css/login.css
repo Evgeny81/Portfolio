@@ -1,0 +1,89 @@
+/*Коробка*/
+.login-box {
+	width: 588px;
+	height: 485px;
+	margin: 50px auto 50px;
+	background: #EFF3F7;
+	box-shadow: 0 5px 10px 5px #D8D9D8;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*Заголовок коробки*/
+.login-header {
+	min-height: 92px;
+	background: #48CBE8;
+	border-bottom: 16px solid #67DFFA;
+	margin-bottom: 15px;
+}
+
+.log-sign-pos {
+	padding-top: 15px;
+}
+
+.login-sign {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 40px;
+	font-family: 'fira_sansregular';
+	font-weight: normal;
+}
+
+/*Ввод пароля и логина*/
+.login-form {
+	width: 422px;
+	margin: 0 auto;
+}
+
+.login-area:first-child {
+	margin-bottom: 15px;
+}
+
+.login-area {
+	margin-bottom: 34px;
+}
+
+.label {
+	font-size: 35px;
+	color: #58697A;
+	text-align: center;
+	font-family: 'fira_sansbook';
+	margin: 0 auto;
+}
+
+.login-field {
+	width: 100%;
+	height: 60px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	display: block;
+	padding: 0;
+	margin: 0 auto;
+	border: 1px solid #48CBE8;
+}
+
+.login-field::-webkit-input-placeholder {
+	color: #67DFFA;
+	padding-left: 15px;
+	letter-spacing: 0.5px;
+}
+
+.button {
+	width: 224px;
+	height: 55px;
+	letter-spacing: 2.5px;
+	margin: 0 auto;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	color: white;
+	border: none;
+	background-color: #67DFFA;
+	font-size: 31px;
+	border-bottom: 2px solid #3BA8C0;
+}
+
+.button:hover {
+	border-bottom: none;
+}

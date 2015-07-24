@@ -19,7 +19,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- CSS -->
 	<link rel="stylesheet" href="/fonts/fira.css">
-	<link rel="stylesheet" href="/css/normalize.css/normalize.css">
+	<link rel="stylesheet" href="/bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/about.css">
 	<!-- JS -->
@@ -35,7 +35,7 @@
 			<!-- Логотип школы -->
 
 				<a href="http://loftschool.com/" class="logo">
-					<i class="sprite sprite-logo "></i>
+					<img src="images/logo.png" alt="logo" class="sprite-logo ">
 					<span class="header-logo-text">Логотип школы</span>
 				</a>
 
@@ -43,24 +43,16 @@
 
 				<ul class="soc">
 					<li class="soc1">
-						<a href="http://vk.com/id5428205" class="sprite vk">
-							Вконтакте
-						</a>
+						<a href="http://vk.com/id5428205" class="sprite vk">Вконтакте</a>
 					</li>
 					<li class="soc1">
-						<a href="https://twitter.com/" class="sprite tw">
-							Twitter
-						</a>
+						<a href="https://twitter.com/" class="sprite tw">Twitter</a>
 					</li>
 					<li class="soc1">
-						<a href="https://www.facebook.com/profile.php?id=100001995507883" class="sprite fb">
-							Facebook
-						</a>
+						<a href="https://www.facebook.com/profile.php?id=100001995507883" class="sprite fb">Facebook</a>
 					</li>
 					<li class="soc1">
-						<a href="https://github.com/Evgeny81" class="sprite git">
-							Git
-						</a>
+						<a href="https://github.com/Evgeny81" class="sprite git">Git</a>
 					</li>
 				</ul>
 			</div>
@@ -74,15 +66,15 @@
 							<a href="#" class="menu-point">Обо мне</a>
 						</li>
 						<li class="menu"> <!-- класс without-current, если current в меню "Связаться со мной"-->
-							<a href="" class="menu-point">Мои работы</a>
+							<a href="/portfolio.html" class="menu-point">Мои работы</a>
 						</li>
-						<li class="menu"> <!-- класс without-current, если current в меню "Обо мне" и убрать, если в меню "Мои работы"-->
-							<a href="" class="menu-point">Связаться со мной</a>
+						<li class="menu without-current"> <!-- класс without-current, если current в меню "Обо мне" и убрать, если в меню "Мои работы"-->
+							<a href="/connect.html" class="menu-point">Связаться со мной</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="contacts_container">
 				<!-- Контакты -->
+				<div class="contacts_container">
 					<ul class="contacts">
 						<li class="contact">
 							<span class="cont-text">Контакты</span>
@@ -102,8 +94,8 @@
 		<!-- Основная часть -->
 		<div class="presentation">
 		<!-- Основная информация, о себе -->
-			<section class="main_information">
-				<h1 class="main_header">Основная информация</h1>
+			<section class="box main_information">
+				<h2 class="box_header main_header">Основная информация</h2>
 				<div class="information_container">
 					<div class="avatar-position">
 						<div class="avatar-box">
@@ -129,14 +121,14 @@
 								<div class="about-description">FRONTEND разработчик</div>
 							</li>
 							<li class="about-list">
-								<div class="about-title">Ключевые навыки:</div>
-								<div class="about-description">
-								<span class="skill htm">html</span>
-								<span class="skill css">css</span>
-								<span class="skill jscript">javascript</span>
-								<span class="skill gulp">gulp</span>
-								<span class="skill s_git">git</span>
-								</div>
+								<span class="about-title">Ключевые навыки:</span>
+								<span class="about-description">
+								<img src="/images/skill-html.png" alt="skill-html" class="skill">
+								<img src="/images/skill-css.png" alt="skill-css" class="skill">
+								<img src="/images/skill-js.png" alt="skill-js" class="skill">
+								<img src="/images/skill-gulp.png" alt="skill-gulp" class="skill">
+								<img src="/images/skill-git.png" alt="skill-git" class="skill">
+								</span>
 							</li>
 
 						</ul>
@@ -144,39 +136,39 @@
 				</div>
 			</section>
 			<!-- Опыт работы -->
-			<section class="experience">
-				<h2 class="exp_header">Опыт работы</h2>
+			<section class="box experience">
+				<h2 class="box_header exp_header">Опыт работы</h2>
 				<ul class="about-exp">
 					<li class="try case">
-						<p class="info medium">ОАО "ЭФКО" - менеджер проектов</p>
-						<p class="info light">Октябрь 2008 - Декабрь 2010</p>
+						<span class="info medium">ОАО "ЭФКО" - менеджер проектов</span>
+						<span class="info light">Октябрь 2008 - Декабрь 2010</span>
 					</li>
 					<li class="try case">
-						<p class="info medium">ОАУ "ИРКП" - первый заместитель директора</p>
-						<p class="info light">Август 2011 - Март 2012</p>
+						<span class="info medium">ОАУ "ИРКП" - первый заместитель директора</span>
+						<span class="info light">Август 2011 - Март 2012</span>
 					</li>
 					<li class="try case">
-						<p class="info medium">ООО "ЕВВА" - директор</p>
-						<p class="info light">Март 2012 - по настоящее время</p>
+						<span class="info medium">ООО "ЕВВА" - директор</span>
+						<span class="info light">Март 2012 - по настоящее время</span>
 					</li>
 
 				</ul>
 			</section>
 			<!-- Образование -->
-			<section class="education">
-				<h2 class="edu_header">Образование</h2>
+			<section class="box education">
+				<h2 class="box_header edu_header">Образование</h2>
 				<ul class="about-edu">
 					<li class="try hat">
-					<p class="info medium">Высшее. БелГТУ им. В.Г. Шухова</p>
-					<p class="info  light">Сентябрь 1999 - Июль 2004</p>
+					<span class="info medium">Высшее. БелГТУ им. В.Г. Шухова</span>
+					<span class="info  light">Сентябрь 1999 - Июль 2004</span>
 					</li>
 					<li class="try hat">
-					<p class="info medium">Магистратура. Высшая школа бизнеса МИРБИС</p>
-					<p class="info  light">Март 2009 - Август 2010</p>
+					<span class="info medium">Магистратура. Высшая школа бизнеса МИРБИС</span>
+					<span class="info  light">Март 2009 - Август 2010</span>
 					</li>
 					<li class="try sheet">
-					<p class="info medium">Курсы Loftschool.ru</p>
-					<p class="info light">Май 2015 - по настоящее время</p>
+					<span class="info medium">Курсы Loftschool.ru</span>
+					<span class="info light">Май 2015 - по настоящее время</span>
 					</li>
 				</ul>
 			</section>
@@ -187,9 +179,9 @@
 
 	<!-- Футер -->
 		<footer class="site_footer">
-			<a href=""><div class="sprite lock"></div></a>
+			<a href="/login.html"><div class="sprite lock"></div></a>
 
-			<p class="copyright light">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
+			<p class="copyright">&copy2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</p>
 		</footer>
 
 </body>

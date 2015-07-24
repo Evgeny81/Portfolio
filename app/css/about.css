@@ -1,17 +1,6 @@
-
-
-/*Спрайт*/
-
-.sprite {
-    background-image: url(../images/spritesheet.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    text-indent: -9999px;
-}
-
 /*Основная информация - Ключевые навыки*/
 
-.main_information {
+.box {
     width: 650px;
     min-height: 100%;
     background: #EFF3F7;
@@ -19,11 +8,11 @@
     margin-bottom: 29px;
 }
 
-.main_header, .exp_header, .edu_header {
+.box_header {
     border-bottom: 2px solid rgb(59,168,192);
     font-size: 27px;
     color: rgb(59,168,192);
-    width: 100%;
+    min-width: 10%;
 }
 
 .main_header {
@@ -95,16 +84,16 @@
 .skill{
     color: white;
     display: inline-block;
-    background:  -moz-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    /*background:  -moz-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
     background: -ms-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
     background: -o-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
-    background: -webkit-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);
+    background: -webkit-linear-gradient(top, #3BA8C0 52%, #2E8CA2 47%);*/
     margin: 5px 4px 6px 0;
     text-align: center;
     font-size: 12px;
 }
 
-.css{
+/*.css{
     width: 46px;
     height: 19px;
     -webkit-border-radius: 2px;
@@ -142,7 +131,7 @@
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-}
+}*/
 
 /*Опыт работы*/
 
@@ -159,7 +148,8 @@
 
 .info {
     padding-left: 72px;
-    margin: 0 0 0 0;
+    margin: 0;
+    display: block;
 }
 
 .try {
@@ -177,26 +167,13 @@
     height: 100%;
 }
 
-.experience {
-    width: 650px;
-    height: 100%;
-    background: #EFF3F7;
-    border-radius: 3px;
-}
-
 .case {
     background: url(../images/case.png)  0% center  no-repeat;
 }
 
-
-
 /*Образование*/
 
 .education {
-    width: 650px;
-    height: 100%;
-    background: #EFF3F7;
-    border-radius: 3px;
     margin-bottom: 38px;
 }
 
